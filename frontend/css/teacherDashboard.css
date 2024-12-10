@@ -1,0 +1,110 @@
+/* Load font */
+@font-face {
+    font-family: 'Tajawal';
+    src: url('../asset/fonts/tajawal/Tajawal-Regular.ttf') format('truetype');
+  }
+  
+  * {
+    font-family: "Tajawal", sans-serif;
+    font-weight: 400;
+  }
+  
+  /* General Page Body */
+  body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #1abc9c, #3498db);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #2c3e50;
+  }
+  
+  /* Main Dashboard */
+  .dashboard {
+    display: flex;
+    width: 90%;
+    height: 90%;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+  }
+  
+  /* Sidebar */
+  .sidebar {
+    width: 250px;
+    background: #34495e;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .sidebar h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .sidebar button {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    background: #1abc9c;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .sidebar button:hover {
+    background: #16a085;
+  }
+  
+  /* Main Content */
+  .main-content {
+    flex-grow: 1;
+    padding: 20px;
+    overflow-y: auto;
+  }
+  
+  .tabs {
+    margin-bottom: 10px;
+  }
+  
+  .tabs button {
+    margin-right: 10px;
+    padding: 10px 20px;
+    background: #1abc9c;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .tabs button:hover {
+    background: #16a085;
+  }
+  
+  .tab {
+    display: none;
+  }
+  
+  .tab.active {
+    display: block;
+  }
+  
+  table {
+    margin: 20px 0;
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+  }
+  

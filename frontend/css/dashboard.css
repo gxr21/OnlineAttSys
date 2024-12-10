@@ -1,0 +1,125 @@
+@font-face {
+    font-family: 'Tajawal';
+    src: url('../asset/fonts/tajawal/Tajawal-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    font-family: "Tajawal", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #1abc9c, #3498db);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #2c3e50;
+}
+
+.dashboard {
+    display: flex;
+    width: 90%;
+    height: 90%;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.sidebar {
+    width: 250px;
+    background: #34495e;
+    padding: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebar h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 10px;
+    background: #1abc9c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: #16a085;
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(1);
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+    overflow-y: auto;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+h2 {
+    font-size: 28px;
+    color: #34495e;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: #1abc9c;
+    box-shadow: 0 0 8px rgba(26, 188, 156, 0.5);
+}
+
+select {
+    appearance: none;
+    background: white url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDE2IDE2Ij48cGF0aCBkPSJNMTUuMzI3IDYuNjY3TDEyLjcyMyA0LjAzNyAxMi4wMDEgNS40MTcgMTMuMDAxIDcuMDAxIDguNTQ3IDEzLjM3NiA2IDExLjYwNCAxLjk5OSA3LjAwMSAzLjAwMSA2LjAwMSA2LjAwMSAxMy4wMDEgMTIuMDAxIDE0LjAwMSAxMy4zNzZMMTIuNzIzIDExLjM1MyAxMi4wMDEgOS45MjMgMTIuMDAxIDcuNjQ3IDE0LjAwMSA3LjY2NyAxNS4zMjcgNi42Njd6Ii8+PC9zdmc+') no-repeat right 10px center;
+    background-size: 10px;
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.tab {
+    display: none;
+}
+
+.tab.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
