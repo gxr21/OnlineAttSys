@@ -29,6 +29,7 @@ if ($_SESSION['role'] === 'admin') {
             <button onclick="showTab('manage-students')">إدارة الطلاب</button>
             <button onclick="showTab('manage-subjects')">إدارة المواد</button>
         </div>
+
         <div class="main-content">
             <div id="manage-students" class="tab active">
                 <h2>إدارة الطلاب</h2>
